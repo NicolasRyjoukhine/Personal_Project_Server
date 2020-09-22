@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Project 2020-21</title>
-    <link rel="stylesheet" type="text/css" href="cssFiles/mainWithVideoStyles.css">
+    <link rel="stylesheet" type="text/css" href="clientSide\templates\cssFiles\mainWithVideoStyles.css">
 </head>
 <body>
     <div class="side_bar">
@@ -40,20 +40,20 @@
                 to select more precicely what you want to move.
             </p>
             <p class="which_arm">Current Arm Selected: {{ armnum }}</p>
-            <button class="button_up">Up</button>
+            <button class="button_up" id="button_up">Up</button>
             <div class="special_commands">
                 <img src="Images\specialcommandsicon-removebg-preview (1).png">
                 <div class="command">Do a 360?</div>
-                <button class="commandbutton360">Do it!</button>
+                <button class="commandbutton360">Do it!{{ buttonint }}</button>
                 <div class="command">Throw the object?</div>
                 <button class="commandbuttonthrow">Throw it!</button>
                 <div class="command">A small dance?</div>
                 <button class="commandbuttondance">Let's go!</button>
             </div>
             <br>
-            <button class="button_left">Left</button>
-            <button class="button_down">Down</button>
-            <button class="button_right">Right</button>
+            <button class="button_left" id="button_left">Left</button>
+            <button class="button_down" id="button_down">Down</button>
+            <button class="button_right" id="button_right">Right</button>
             <div class="allobjects">
                 <h3>Detected Objects</h3>
                 {% for object in objects %}

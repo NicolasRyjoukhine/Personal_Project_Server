@@ -47,4 +47,3 @@ class Move:
 
 
 
-print(responseFromModule)
